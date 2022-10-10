@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *, *::before, *::after {
   margin: 0;
@@ -122,7 +123,86 @@ nav i {
   background-color: white;
   width: 40%;
   padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5rem;
 }
 .about h1 {
   font-size: 2rem;
+  color: #183CCE;
+}
+.about p {
+  margin-top: 1rem;
+}
+
+/* Stack */
+.tech-stack {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.tech-stack h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.tech-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.tech {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  width: 40%;
+  border-radius: 20px;
+}
+.tech h2 {
+  text-align: center;
+}
+.tech-list {
+  margin-top: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+}
+.tech-list div {
+  display: flex;
+  gap: 1rem;
+  padding: .5rem;
+}
+.tech-list i {
+  font-size: 2rem;
+}
+
+/* Logo colors */
+.fa-html5 {
+  color: #e34c26;
+}
+.fa-js {
+  color: #f0db4f;
+}
+.fa-node-js {
+  color: #68a063
+}
+.fa-css3-alt {
+  color: #183CCE;
+}
+.fa-react {
+  color: #183CCE;
+}
+.fa-python {
+  color: #183CCE;
+}
+.fa-github {
+  color: #f34f29;
+}
+.fa-figma {
+  color: #c8a3ac;
+}
+.fa-database {
+  color: #68a063;
+}
+.fa-npm {
+  color: #cb3837;
+}
+.fa-server {
+  color: #183CCE;
 }
