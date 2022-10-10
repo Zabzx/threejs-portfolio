@@ -11,6 +11,9 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
 
+const ambientLight = new THREE.AmbientLight();
+scene.add(ambientLight)
+
 // Axes helper
 // const axesHelper = new THREE.AxesHelper(10, 10, 10);
 // axesHelper.setColors('white', 'blue', 'red')
@@ -27,6 +30,14 @@ loader.load('./3D-renders/space3d/scene.gltf', (gltf) => {
   scene.add(gltf.scene);
   space = gltf.scene;
 });
+
+// Laptop GLTF 3D model
+let laptop;
+loader.load('./3D-renders/laptop/scene.gltf', (gltf) => {
+  gltf.scene.scale.set(.5, .5, .5);
+  gltf.scene.position.set(1, -2, 3)
+  scene.add(gltf.scene);
+})
 
 // Animate
 function animate() {
