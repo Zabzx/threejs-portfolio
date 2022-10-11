@@ -256,3 +256,70 @@ nav i {
   background-color: white;
   border-radius: 20px;
 }
+
+/* Contact */
+#contact {
+  position: relative;
+  margin-top: 5rem;
+  z-index: 1;
+  height: 100vh;
+}
+#contact h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 5rem;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.my-email {
+  background-color: #183CCE;
+  color: white;
+  width: 30%;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  height: 200px;
+}
+.my-email i {
+  margin: 1rem 0 1rem;
+  font-size: 2rem;
+}
+.my-email p {
+  margin: 1rem 0 1rem;
+}
+.my-email small {
+  padding-bottom: 1rem;
+}
+.contact-container form {
+  width: 80%;
+}
+.contact-container form input, .contact-container {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  padding-left: 20px;
+  border: none;
+}
+.form-input2 {
+  margin-top: 2rem;
+}
+textarea {
+  height: 100px;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 20px;
+  padding: 20px 0 0 20px;
+  resize: vertical;
+}
+form button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  font-size: 1.2rem;
+  border: none;
+}
