@@ -5,40 +5,39 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    <title>Vite App</title>
+    <title>Ziabeher Phillips | Portfolio</title>
   </head>
   <body>
-    <div class="intro">
+    <div id="intro">
     <header class="container">
       <div class="logo">
         <h1 id="z"><span class="blue">Z.</span> Phillips</h1>
       </div>
 
       <div class="header-links">
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <a style="color: white" href="https://github.com/Zabzx" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a style="color: white;" href="https://twitter.com/zabzDev" target="_blank"><i class="fa-brands fa-twitter"></i></a>
       </div>
     </header>
 
-    <nav class="">
-      <i class="fa-solid fa-house active-nav"></i>
-      <i class="fa-solid fa-person"></i>
-      <i class="fa-regular fa-folder-open"></i>
-      <i class="fa-regular fa-address-book"></i>
-      <i class="fa-solid fa-arrow-right"></i>
+    <nav>
+      <a href="#intro"><i class="fa-solid fa-house"></i></a>
+      <a href="#about"><i class="fa-solid fa-person"></i></a>
+      <a href="#projects"><i class="fa-regular fa-folder-open"></i></a>
+      <a href="#contact"><i class="fa-regular fa-address-book"></i></a>
     </nav>
 
     <div class="container">
     <div class="hero">
-      <h2>Documentation of my recent work, and sneak peak of future work :)</h2>
+      <h2>Documentation of my recent work and experiences using different technologies.</h2>
       <button class="explore-btn">Start exploring</button>
     </div>
     </div>
 
     </div>
 
-    <div class="container">
-    <section class="about">
+    <div class="about-container container">
+    <section id="about" class="about">
       <h1>About</h1>
       <p>I'm a Front End Web Developer based in the <span class="blue">Caribbean</span>. I value high quality and meaningful development. My goal is to be part of projects that will satisfy the user, that will help me grow as a developer and to satisfy my itch of overcoming challenging development problems. I love to learn about new technologies and use them into my own projects to build something that I would enjoy, and think others would enjoy. There is nothing more satisfying than overcoming a challenging problem and feeling the instant growth you gain from it. Being a developer is me being in my comfort zone and I wouldn't want it any other way.</p>
     </section>
@@ -89,7 +88,7 @@
           <h2>Tools and Services</h2>
           <ul class="tech-list">
             <div>
-              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-github github"></i>
               <p>Git / GitHub</p>
             </div>
             <div>
@@ -134,8 +133,8 @@
             <li>Framer Motion</li>
           </ul>
           <div class="project-btns">
-            <button>GitHub</button>
-            <button>Link to Application</button>
+            <a href="https://github.com/Zabzx/Mini-Archive" target="_blank"><button>GitHub</button></a>
+            <a href="https://mini-media.netlify.app/" target="_blank"><button>Link to Application</button></a>
           </div>
           </div>
         </div>
@@ -151,8 +150,8 @@
             <li>Axios</li>
           </ul>
           <div class="project-btns">
-            <button>GitHub</button>
-            <button>Link to Application</button>
+            <a href="https://github.com/Zabzx/spiceUp-v2/tree/main" target="_blank"><button>GitHub</button></a>
+            <a href="https://spicedup.netlify.app/" target="_blank"><button>Link to Application</button></a>
           </div>
           </div>
         </div>
@@ -168,8 +167,8 @@
             <li>JavaScript</li>
           </ul>
           <div class="project-btns">
-            <button>GitHub</button>
-            <button>Link to Application</button>
+            <a href="https://github.com/Zabzx/Static" target="_blank"><button>GitHub</button></a>
+            <a href="https://cloudtechh.netlify.app/" target="_blank"><button>Link to Application</button></a>
           </div>
           </div>
         </div>
@@ -185,8 +184,8 @@
             <li>JavaScript</li>
           </ul>
           <div class="project-btns">
-            <button>GitHub</button>
-            <button>Link to Application</button>
+            <a href="https://github.com/Zabzx/Live-Countdown" target="_blank"><button>GitHub</button></a>
+            <a href="https://livedatecountdown.netlify.app/" target="_blank"><button>Link to Application</button></a>
           </div>
           </div>
         </div>
@@ -205,11 +204,11 @@
         </div>
 
         <form action="https://formsubmit.co/ziabeherphillips@gmail.com" method="POST">
-          <input type="text" placeholder="Your Name">
+          <input name="name" type="text" placeholder="Your Name" required>
           <br>
-          <input class="form-input2" type="email" placeholder="Your Email">
+          <input name="email" class="form-input2" type="email" placeholder="Your Email" required>
           <br>
-          <textarea placeholder="Your Message"></textarea>
+          <textarea name="message" placeholder="Your Message" required></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>

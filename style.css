@@ -16,6 +16,10 @@ img {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Courgette', cursive;
 }
@@ -35,10 +39,13 @@ body {
   cursor: grabbing;
 }
 
-.intro {
+#intro {
   height: 100vh;
 }
 
+button {
+  cursor: pointer;
+}
 header {
   position: relative;
   display: flex;
@@ -61,24 +68,6 @@ header h1 {
   cursor: pointer;
 }
 
-.height {
-  height: 500vh;
-}
-
-.explore-btn-container {
-  text-align: center;
-}
-.explore-btn {
-  position: relative;
-  margin-top: 3rem;
-  z-index: 2;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  background-color: white;
-  font-size: 1.1rem;
-  border: none;
-}
-
 nav {
   position: fixed;
   z-index: 2;
@@ -95,11 +84,8 @@ nav {
 nav i {
   font-size: 1.2rem;
 }
-
-.active-nav {
+nav a {
   color: #183CCE;
-  border-radius: 50px;
-  font-size: 1.5rem;
 }
 
 /* Hero */
@@ -114,10 +100,10 @@ nav i {
 .explore-btn {
   margin-top: 2rem;
   border-radius: 20px;
-  padding: 1rem 2rem;
+  padding: .6rem 1rem;
   background: #183CCE;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: 'Courgette', cursive;
 }
 
@@ -195,7 +181,7 @@ nav i {
 .fa-python {
   color: #183CCE;
 }
-.fa-github {
+.github {
   color: #f34f29;
 }
 .fa-figma {
@@ -221,6 +207,7 @@ nav i {
   color: white;
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 2rem;
 }
 .projects-container {
   display: grid;
@@ -268,6 +255,7 @@ nav i {
   text-align: center;
   color: white;
   margin-bottom: 5rem;
+  font-size: 2rem;
 }
 .contact-container {
   display: flex;
@@ -279,10 +267,9 @@ nav i {
   color: white;
   width: 30%;
   text-align: center;
-  font-size: 1.4rem;
   border-radius: 20px;
   font-family: 'Montserrat', sans-serif;
-  height: 200px;
+  height: 150px;
 }
 .my-email i {
   margin: 1rem 0 1rem;
@@ -295,7 +282,7 @@ nav i {
   padding-bottom: 1rem;
 }
 .contact-container form {
-  width: 80%;
+  width: 100%;
 }
 .contact-container form input, .contact-container {
   width: 100%;
@@ -310,7 +297,7 @@ nav i {
 textarea {
   height: 100px;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: 20px;
   padding: 20px 0 0 20px;
   resize: vertical;
@@ -319,7 +306,64 @@ form button {
   width: 100%;
   margin-top: 1rem;
   padding: 1rem;
-  background-color: white;
+  background-color: #183CCE;
+  color: white;
   font-size: 1.2rem;
   border: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  #intro {
+    height: 90vh;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .header-links {
+    gap: 1rem;
+  }
+  .header-links i {
+    font-size: 2rem;
+  }
+
+  .hero {
+    text-align: center;
+    width: 100%;
+  }
+  .about-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about {
+    width: 80%;
+  }
+
+  .tech-flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tech {
+    width: 100%;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  #contact {
+    margin-bottom: 5rem;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .my-email {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
 }
