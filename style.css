@@ -314,7 +314,17 @@ form button {
 }
 
 /* Responsive */
+@media only screen and (max-width: 800px) {
+  /* Making it so that tapping on the canvas will scroll page instead of rotatating the scene  */
+  #canvas {
+    pointer-events: none;
+  }
+}
 @media only screen and (max-width: 600px) {
+  /* Making it so that tapping on the canvas will scroll page instead of rotatating the scene  */
+  #canvas {
+    pointer-events: none;
+  }
   #intro {
     height: 90vh;
   }
